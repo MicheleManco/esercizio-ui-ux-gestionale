@@ -1,4 +1,4 @@
-# ivi-mind
+# prova-ui-gestionale
 
 ## Project setup
 ```
