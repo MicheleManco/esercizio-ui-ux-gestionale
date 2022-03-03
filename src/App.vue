@@ -86,7 +86,7 @@ export default {
         // Azienda 2 ----------------------------------------------------------------------
         {
           ecommerceProvenienza:"fantasia",
-          ordine: [
+          ordine: 
               {
               ecommerceProvenienza:"fantasia",
               data:"10/12/2021",
@@ -139,13 +139,13 @@ export default {
                 text:"mi servono entro due settimane, Grazie "
               },
               }
-          ]
+          
         },
 
         // Azienda 3 ----------------------------------------------------------------------
         {
           ecommerceProvenienza:"armadio verde",
-          ordine: [
+          ordine: 
               {
               ecommerceProvenienza:"armadio verde",
               data:"10/12/2021",
@@ -198,13 +198,13 @@ export default {
                 text:"mi servono entro due settimane, Grazie "
               },
               }
-          ]
+          
         },
 
         // azienda4 ----------------------------------------------------------------------
         {
           ecommerceProvenienza:"amazon",
-          ordine: [
+          ordine: 
               {
                 ecommerceProvenienza:"amazon",
                 data:"10/12/2021",
@@ -219,7 +219,7 @@ export default {
                 totIncasso:"400€",
                 chiusura:"false",
 
-              indirizzo: [{
+              indirizzo: {
                 nome:"gianni",
                 cognome:"rossi",
                 indirizzo1:"via paola 5",
@@ -228,36 +228,36 @@ export default {
                 citta:"thiene",
                 nazione:"italia",
                 telefono:"3563449862"
-              }],
+              },
 
-              cliente:[{
+              cliente:{
                     nome:"gianni",
                     cognome:"rossi",
                     sesso:"m",
                     email:"giannirossi@mail.com"
-                  }],
+                  },
 
-              prodotti:[{
+              prodotti:{
                 img:"assets/logo.png",
-                nome:"penna",
+                nome:"astuccio",
                 categoria:"cancelleria",
                 quantitaAcquistata:100,
                 skulLocation:"cnl-bic-bk-01",
                 prezzo:"0.30€",
                 quantitaRimanente:1000,
-              }],
+              },
 
-              noteOrdine:[{
+              noteOrdine:{
                 operatore:"mario",
                 text:"Poche in magazzino, fare rifornimento al prossimo ordine"
-              }],
+              },
 
-              noteCliente:[{
+              noteCliente:{
                 cliente:"amazon",
                 text:"mi servono entro domani"
-              }],
+              },
               }
-          ]
+          
         }
       ]
     }
