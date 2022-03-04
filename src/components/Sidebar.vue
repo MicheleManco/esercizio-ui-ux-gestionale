@@ -1,6 +1,8 @@
 <template>
 <div id="container">
+    
       <div id="container-sidebar">
+          <h2>lista ordini</h2>
       <ul>
         <li v-for="azienda,i in  aziende" :key="i" :class="i === countervisible ? 'active':''" @click="showall(i),$emit('select', countervisible)" >
             <div>
@@ -27,6 +29,7 @@ export default {
       aziende:Array,
   },
   methods:{
+      //mi serve per dare a i li la classe item se clicco sudi essi
       showall(index){
           this.countervisible = index
       }
@@ -46,21 +49,21 @@ export default {
         border-radius: 10px;
         padding:8px;
         box-shadow: 0px 8px 17px 2px rgba(0,0,0,0.14) , 0px 3px 14px 2px rgba(0,0,0,0.12) , 0px 5px 5px -3px rgba(0,0,0,0.2);
-        display: flex;
+        
 
         ul{
             width: 100%;
-            max-height: 100%;
+            max-height: 90%;
             overflow: scroll ;
             overflow-x: hidden;
             .active{
-                    background-color: rgb(0, 183, 255);
+                    background-color: rgb(28, 191, 255);
                 }
             li{
                 list-style: none;
                 border-radius: 10px;
                 padding: 10px;
-                margin: 0 0 10px 0;
+                margin: 12px 7px;
                 background-color: rgb(245, 249, 250);
                 box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
                 

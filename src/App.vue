@@ -24,7 +24,7 @@ export default {
     return {
       countervisible : 0,
       aziende: [
-        // azienda1 ----------------------------------------------------------------------
+        // azienda1 -----------------------------------------------------------------------
         {
           ecommerceProvenienza:"armadio verde",
           ordine: 
@@ -36,10 +36,10 @@ export default {
               idOrdine:"78913467",
               pagamento:"carta di credito",
               statoOrdine:"da spedire",
-              totSconto:"10%",
-              totProdotti:"500€",
-              totSpedizione:"80€",
-              totIncasso:"400€",
+              totSconto: 10,
+              totProdotti:500,
+              totSpedizione:80,
+              totIncasso: 410,
               chiusura:"false",
             
               indirizzo: {
@@ -60,15 +60,26 @@ export default {
                     email:"giannirossi@mail.com"
                   },
 
-              prodotti:{
+              prodotti:[
+                {
                 img:"assets/logo.png",
                 nome:"penna",
                 categoria:"cancelleria",
                 quantitaAcquistata:100,
                 skulLocation:"cnl-bic-bk-01",
-                prezzo:"0.30€",
+                prezzo:0.30,
                 quantitaRimanente:1000,
               },
+              {
+                img:"assets/logo.png",
+                nome:"matita",
+                categoria:"cancelleria",
+                quantitaAcquistata:50,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:800,
+              }
+              ],
 
               noteOrdine:{
                 operatore:"mario",
@@ -82,7 +93,6 @@ export default {
               }
           
         },
-
         // Azienda 2 ----------------------------------------------------------------------
         {
           ecommerceProvenienza:"fantasia",
@@ -95,28 +105,28 @@ export default {
               idOrdine:"17935826",
               pagamento:"carta di credito",
               statoOrdine:"da spedire",
-              totSconto:"10%",
-              totProdotti:"500€",
-              totSpedizione:"80€",
-              totIncasso:"400€",
+              totSconto:10,
+              totProdotti:500,
+              totSpedizione:80,
+              totIncasso:400,
               chiusura:"false",
             
               indirizzo: {
-                nome:"gianni",
-                cognome:"rossi",
-                indirizzo1:"via paola 5",
+                nome:"Franca",
+                cognome:"Verdi",
+                indirizzo1:"via san gaetano 5",
                 indirizzo2:"",
-                cap:"36016",
-                citta:"thiene",
+                cap:"50121",
+                citta:"Firenze",
                 nazione:"italia",
-                telefono:"3563449862"
+                telefono:"6591778349"
               },
 
               cliente:{
-                    nome:"gianni",
-                    cognome:"rossi",
-                    sesso:"m",
-                    email:"giannirossi@mail.com"
+                    nome:"Franca",
+                    cognome:"Verdi",
+                    sesso:"f",
+                    email:"Francaverdi@mail.com"
                   },
 
               prodotti:{
@@ -125,7 +135,7 @@ export default {
                 categoria:"cancelleria",
                 quantitaAcquistata:100,
                 skulLocation:"cnl-bic-bk-01",
-                prezzo:"0.30€",
+                prezzo:0.30,
                 quantitaRimanente:1000,
               },
 
@@ -135,13 +145,12 @@ export default {
               },
 
               noteCliente:{
-                cliente:"armadio verde",
-                text:"mi servono entro due settimane, Grazie "
+                cliente:"fantasia",
+                text:"sdognbsigujdnghosignhosgnosg nsoldikgjnowesringsoikjfgsiokedigukhnasogikjusnedog idkjgnfvmaoikgfjnosuijknhgisegujnhsoeguij jhnsoigernhsiogkshjoregujishnogiujs hnogishngirujdngsiogsneodigf jsoiguseordgishngioshn"
               },
               }
           
         },
-
         // Azienda 3 ----------------------------------------------------------------------
         {
           ecommerceProvenienza:"armadio verde",
@@ -154,10 +163,10 @@ export default {
               idOrdine:"10000021",
               pagamento:"carta di credito",
               statoOrdine:"da spedire",
-              totSconto:"10%",
-              totProdotti:"500€",
-              totSpedizione:"80€",
-              totIncasso:"400€",
+              totSconto:10,
+              totProdotti:500,
+              totSpedizione:80,
+              totIncasso:400,
               chiusura:"false",
             
               indirizzo: {
@@ -184,7 +193,7 @@ export default {
                 categoria:"cancelleria",
                 quantitaAcquistata:100,
                 skulLocation:"cnl-bic-bk-01",
-                prezzo:"0.30€",
+                prezzo:0.30,
                 quantitaRimanente:1000,
               },
 
@@ -195,13 +204,12 @@ export default {
 
               noteCliente:{
                 cliente:"armadio verde",
-                text:"mi servono entro due settimane, Grazie "
+                text:"mi serve che siano imballate con attenzione perchè sono estremamente fragili e potrebbe capitare che si rompano"
               },
               }
           
         },
-
-        // azienda4 ----------------------------------------------------------------------
+        // azienda4 -----------------------------------------------------------------------
         {
           ecommerceProvenienza:"amazon",
           ordine: 
@@ -213,10 +221,10 @@ export default {
                 idOrdine:"19743467",
                 pagamento:"carta di credito",
                 statoOrdine:"da spedire",
-                totSconto:"10%",
-                totProdotti:"500€",
-                totSpedizione:"80€",
-                totIncasso:"400€",
+                totSconto:10,
+                totProdotti:500,
+                totSpedizione:80,
+                totIncasso:400,
                 chiusura:"false",
 
               indirizzo: {
@@ -243,7 +251,7 @@ export default {
                 categoria:"cancelleria",
                 quantitaAcquistata:100,
                 skulLocation:"cnl-bic-bk-01",
-                prezzo:"0.30€",
+                prezzo:0.30,
                 quantitaRimanente:1000,
               },
 
@@ -258,15 +266,529 @@ export default {
               },
               }
           
-        }
-      ]
+        },
+        // aziende di test ----------------------------------------------------------------
+        {
+          ecommerceProvenienza:"fantasia",
+          ordine: 
+              {
+              ecommerceProvenienza:"fantasia",
+              data:"10/12/2021",
+              valuta:"euro",
+              corriere:"ups",
+              idOrdine:"17935826",
+              pagamento:"carta di credito",
+              statoOrdine:"da spedire",
+              totSconto:10,
+              totProdotti:500,
+              totSpedizione:80,
+              totIncasso:400,
+              chiusura:"false",
+            
+              indirizzo: {
+                nome:"Franca",
+                cognome:"Verdi",
+                indirizzo1:"via san gaetano 5",
+                indirizzo2:"",
+                cap:"50121",
+                citta:"Firenze",
+                nazione:"italia",
+                telefono:"6591778349"
+              },
+
+              cliente:{
+                    nome:"Franca",
+                    cognome:"Verdi",
+                    sesso:"f",
+                    email:"Francaverdi@mail.com"
+                  },
+
+              prodotti:{
+                img:"assets/logo.png",
+                nome:"penna",
+                categoria:"cancelleria",
+                quantitaAcquistata:100,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:1000,
+              },
+
+              noteOrdine:{
+                operatore:"mario",
+                text:"Poche in magazzino, fare rifornimento al prossimo ordine"
+              },
+
+              noteCliente:{
+                cliente:"fantasia",
+                text:"sdognbsigujdnghosignhosgnosg nsoldikgjnowesringsoikjfgsiokedigukhnasogikjusnedog idkjgnfvmaoikgfjnosuijknhgisegujnhsoeguij jhnsoigernhsiogkshjoregujishnogiujs hnogishngirujdngsiogsneodigf jsoiguseordgishngioshn"
+              },
+              }
+          
+        },
+        {
+          ecommerceProvenienza:"fantasia",
+          ordine: 
+              {
+              ecommerceProvenienza:"fantasia",
+              data:"10/12/2021",
+              valuta:"euro",
+              corriere:"ups",
+              idOrdine:"17935826",
+              pagamento:"carta di credito",
+              statoOrdine:"da spedire",
+              totSconto:10,
+              totProdotti:500,
+              totSpedizione:80,
+              totIncasso:400,
+              chiusura:"false",
+            
+              indirizzo: {
+                nome:"Franca",
+                cognome:"Verdi",
+                indirizzo1:"via san gaetano 5",
+                indirizzo2:"",
+                cap:"50121",
+                citta:"Firenze",
+                nazione:"italia",
+                telefono:"6591778349"
+              },
+
+              cliente:{
+                    nome:"Franca",
+                    cognome:"Verdi",
+                    sesso:"f",
+                    email:"Francaverdi@mail.com"
+                  },
+
+              prodotti:{
+                img:"assets/logo.png",
+                nome:"penna",
+                categoria:"cancelleria",
+                quantitaAcquistata:100,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:1000,
+              },
+
+              noteOrdine:{
+                operatore:"mario",
+                text:"Poche in magazzino, fare rifornimento al prossimo ordine"
+              },
+
+              noteCliente:{
+                cliente:"fantasia",
+                text:"sdognbsigujdnghosignhosgnosg nsoldikgjnowesringsoikjfgsiokedigukhnasogikjusnedog idkjgnfvmaoikgfjnosuijknhgisegujnhsoeguij jhnsoigernhsiogkshjoregujishnogiujs hnogishngirujdngsiogsneodigf jsoiguseordgishngioshn"
+              },
+              }
+          
+        },
+        {
+          ecommerceProvenienza:"fantasia",
+          ordine: 
+              {
+              ecommerceProvenienza:"fantasia",
+              data:"10/12/2021",
+              valuta:"euro",
+              corriere:"ups",
+              idOrdine:"17935826",
+              pagamento:"carta di credito",
+              statoOrdine:"da spedire",
+              totSconto:10,
+              totProdotti:500,
+              totSpedizione:80,
+              totIncasso:400,
+              chiusura:"false",
+            
+              indirizzo: {
+                nome:"Franca",
+                cognome:"Verdi",
+                indirizzo1:"via san gaetano 5",
+                indirizzo2:"",
+                cap:"50121",
+                citta:"Firenze",
+                nazione:"italia",
+                telefono:"6591778349"
+              },
+
+              cliente:{
+                    nome:"Franca",
+                    cognome:"Verdi",
+                    sesso:"f",
+                    email:"Francaverdi@mail.com"
+                  },
+
+              prodotti:{
+                img:"assets/logo.png",
+                nome:"penna",
+                categoria:"cancelleria",
+                quantitaAcquistata:100,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:1000,
+              },
+
+              noteOrdine:{
+                operatore:"mario",
+                text:"Poche in magazzino, fare rifornimento al prossimo ordine"
+              },
+
+              noteCliente:{
+                cliente:"fantasia",
+                text:"sdognbsigujdnghosignhosgnosg nsoldikgjnowesringsoikjfgsiokedigukhnasogikjusnedog idkjgnfvmaoikgfjnosuijknhgisegujnhsoeguij jhnsoigernhsiogkshjoregujishnogiujs hnogishngirujdngsiogsneodigf jsoiguseordgishngioshn"
+              },
+              }
+          
+        },
+        {
+          ecommerceProvenienza:"fantasia",
+          ordine: 
+              {
+              ecommerceProvenienza:"fantasia",
+              data:"10/12/2021",
+              valuta:"euro",
+              corriere:"ups",
+              idOrdine:"17935826",
+              pagamento:"carta di credito",
+              statoOrdine:"da spedire",
+              totSconto:10,
+              totProdotti:500,
+              totSpedizione:80,
+              totIncasso:400,
+              chiusura:"false",
+            
+              indirizzo: {
+                nome:"Franca",
+                cognome:"Verdi",
+                indirizzo1:"via san gaetano 5",
+                indirizzo2:"",
+                cap:"50121",
+                citta:"Firenze",
+                nazione:"italia",
+                telefono:"6591778349"
+              },
+
+              cliente:{
+                    nome:"Franca",
+                    cognome:"Verdi",
+                    sesso:"f",
+                    email:"Francaverdi@mail.com"
+                  },
+
+              prodotti:{
+                img:"assets/logo.png",
+                nome:"penna",
+                categoria:"cancelleria",
+                quantitaAcquistata:100,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:1000,
+              },
+
+              noteOrdine:{
+                operatore:"mario",
+                text:"Poche in magazzino, fare rifornimento al prossimo ordine"
+              },
+
+              noteCliente:{
+                cliente:"fantasia",
+                text:"sdognbsigujdnghosignhosgnosg nsoldikgjnowesringsoikjfgsiokedigukhnasogikjusnedog idkjgnfvmaoikgfjnosuijknhgisegujnhsoeguij jhnsoigernhsiogkshjoregujishnogiujs hnogishngirujdngsiogsneodigf jsoiguseordgishngioshn"
+              },
+              }
+          
+        },
+        {
+          ecommerceProvenienza:"fantasia",
+          ordine: 
+              {
+              ecommerceProvenienza:"fantasia",
+              data:"10/12/2021",
+              valuta:"euro",
+              corriere:"ups",
+              idOrdine:"17935826",
+              pagamento:"carta di credito",
+              statoOrdine:"da spedire",
+              totSconto:10,
+              totProdotti:500,
+              totSpedizione:80,
+              totIncasso:400,
+              chiusura:"false",
+            
+              indirizzo: {
+                nome:"Franca",
+                cognome:"Verdi",
+                indirizzo1:"via san gaetano 5",
+                indirizzo2:"",
+                cap:"50121",
+                citta:"Firenze",
+                nazione:"italia",
+                telefono:"6591778349"
+              },
+
+              cliente:{
+                    nome:"Franca",
+                    cognome:"Verdi",
+                    sesso:"f",
+                    email:"Francaverdi@mail.com"
+                  },
+
+              prodotti:{
+                img:"assets/logo.png",
+                nome:"penna",
+                categoria:"cancelleria",
+                quantitaAcquistata:100,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:1000,
+              },
+
+              noteOrdine:{
+                operatore:"mario",
+                text:"Poche in magazzino, fare rifornimento al prossimo ordine"
+              },
+
+              noteCliente:{
+                cliente:"fantasia",
+                text:"sdognbsigujdnghosignhosgnosg nsoldikgjnowesringsoikjfgsiokedigukhnasogikjusnedog idkjgnfvmaoikgfjnosuijknhgisegujnhsoeguij jhnsoigernhsiogkshjoregujishnogiujs hnogishngirujdngsiogsneodigf jsoiguseordgishngioshn"
+              },
+              }
+          
+        },
+        {
+          ecommerceProvenienza:"fantasia",
+          ordine: 
+              {
+              ecommerceProvenienza:"fantasia",
+              data:"10/12/2021",
+              valuta:"euro",
+              corriere:"ups",
+              idOrdine:"17935826",
+              pagamento:"carta di credito",
+              statoOrdine:"da spedire",
+              totSconto:10,
+              totProdotti:500,
+              totSpedizione:80,
+              totIncasso:400,
+              chiusura:"false",
+            
+              indirizzo: {
+                nome:"Franca",
+                cognome:"Verdi",
+                indirizzo1:"via san gaetano 5",
+                indirizzo2:"",
+                cap:"50121",
+                citta:"Firenze",
+                nazione:"italia",
+                telefono:"6591778349"
+              },
+
+              cliente:{
+                    nome:"Franca",
+                    cognome:"Verdi",
+                    sesso:"f",
+                    email:"Francaverdi@mail.com"
+                  },
+
+              prodotti:{
+                img:"assets/logo.png",
+                nome:"penna",
+                categoria:"cancelleria",
+                quantitaAcquistata:100,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:1000,
+              },
+
+              noteOrdine:{
+                operatore:"mario",
+                text:"Poche in magazzino, fare rifornimento al prossimo ordine"
+              },
+
+              noteCliente:{
+                cliente:"fantasia",
+                text:"sdognbsigujdnghosignhosgnosg nsoldikgjnowesringsoikjfgsiokedigukhnasogikjusnedog idkjgnfvmaoikgfjnosuijknhgisegujnhsoeguij jhnsoigernhsiogkshjoregujishnogiujs hnogishngirujdngsiogsneodigf jsoiguseordgishngioshn"
+              },
+              }
+          
+        },
+        {
+          ecommerceProvenienza:"fantasia",
+          ordine: 
+              {
+              ecommerceProvenienza:"fantasia",
+              data:"10/12/2021",
+              valuta:"euro",
+              corriere:"ups",
+              idOrdine:"17935826",
+              pagamento:"carta di credito",
+              statoOrdine:"da spedire",
+              totSconto:10,
+              totProdotti:500,
+              totSpedizione:80,
+              totIncasso:400,
+              chiusura:"false",
+            
+              indirizzo: {
+                nome:"Franca",
+                cognome:"Verdi",
+                indirizzo1:"via san gaetano 5",
+                indirizzo2:"",
+                cap:"50121",
+                citta:"Firenze",
+                nazione:"italia",
+                telefono:"6591778349"
+              },
+
+              cliente:{
+                    nome:"Franca",
+                    cognome:"Verdi",
+                    sesso:"f",
+                    email:"Francaverdi@mail.com"
+                  },
+
+              prodotti:{
+                img:"assets/logo.png",
+                nome:"penna",
+                categoria:"cancelleria",
+                quantitaAcquistata:100,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:1000,
+              },
+
+              noteOrdine:{
+                operatore:"mario",
+                text:"Poche in magazzino, fare rifornimento al prossimo ordine"
+              },
+
+              noteCliente:{
+                cliente:"fantasia",
+                text:"sdognbsigujdnghosignhosgnosg nsoldikgjnowesringsoikjfgsiokedigukhnasogikjusnedog idkjgnfvmaoikgfjnosuijknhgisegujnhsoeguij jhnsoigernhsiogkshjoregujishnogiujs hnogishngirujdngsiogsneodigf jsoiguseordgishngioshn"
+              },
+              }
+          
+        },
+        {
+          ecommerceProvenienza:"fantasia",
+          ordine: 
+              {
+              ecommerceProvenienza:"fantasia",
+              data:"10/12/2021",
+              valuta:"euro",
+              corriere:"ups",
+              idOrdine:"17935826",
+              pagamento:"carta di credito",
+              statoOrdine:"da spedire",
+              totSconto:10,
+              totProdotti:500,
+              totSpedizione:80,
+              totIncasso:400,
+              chiusura:"false",
+            
+              indirizzo: {
+                nome:"Franca",
+                cognome:"Verdi",
+                indirizzo1:"via san gaetano 5",
+                indirizzo2:"",
+                cap:"50121",
+                citta:"Firenze",
+                nazione:"italia",
+                telefono:"6591778349"
+              },
+
+              cliente:{
+                    nome:"Franca",
+                    cognome:"Verdi",
+                    sesso:"f",
+                    email:"Francaverdi@mail.com"
+                  },
+
+              prodotti:{
+                img:"assets/logo.png",
+                nome:"penna",
+                categoria:"cancelleria",
+                quantitaAcquistata:100,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:1000,
+              },
+
+              noteOrdine:{
+                operatore:"mario",
+                text:"Poche in magazzino, fare rifornimento al prossimo ordine"
+              },
+
+              noteCliente:{
+                cliente:"fantasia",
+                text:"sdognbsigujdnghosignhosgnosg nsoldikgjnowesringsoikjfgsiokedigukhnasogikjusnedog idkjgnfvmaoikgfjnosuijknhgisegujnhsoeguij jhnsoigernhsiogkshjoregujishnogiujs hnogishngirujdngsiogsneodigf jsoiguseordgishngioshn"
+              },
+              }
+          
+        },
+        {
+          ecommerceProvenienza:"fantasia",
+          ordine: 
+              {
+              ecommerceProvenienza:"fantasia",
+              data:"10/12/2021",
+              valuta:"euro",
+              corriere:"ups",
+              idOrdine:"17935826",
+              pagamento:"carta di credito",
+              statoOrdine:"da spedire",
+              totSconto:10,
+              totProdotti:500,
+              totSpedizione:80,
+              totIncasso:400,
+              chiusura:"false",
+            
+              indirizzo: {
+                nome:"Franca",
+                cognome:"Verdi",
+                indirizzo1:"via san gaetano 5",
+                indirizzo2:"",
+                cap:"50121",
+                citta:"Firenze",
+                nazione:"italia",
+                telefono:"6591778349"
+              },
+
+              cliente:{
+                    nome:"Franca",
+                    cognome:"Verdi",
+                    sesso:"f",
+                    email:"Francaverdi@mail.com"
+                  },
+
+              prodotti:{
+                img:"assets/logo.png",
+                nome:"penna",
+                categoria:"cancelleria",
+                quantitaAcquistata:100,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:1000,
+              },
+
+              noteOrdine:{
+                operatore:"mario",
+                text:"Poche in magazzino, fare rifornimento al prossimo ordine"
+              },
+
+              noteCliente:{
+                cliente:"fantasia",
+                text:"sdognbsigujdnghosignhosgnosg nsoldikgjnowesringsoikjfgsiokedigukhnasogikjusnedog idkjgnfvmaoikgfjnosuijknhgisegujnhsoeguij jhnsoigernhsiogkshjoregujishnogiujs hnogishngirujdngsiogsneodigf jsoiguseordgishngioshn"
+              },
+              }
+          
+        },
+      ],
     }
   },
   methods:{
     selettore(count){
       this.countervisible = count
       console.log(this.countervisible);
-    }
+    },
   }
 }
 
@@ -279,7 +801,7 @@ export default {
   box-sizing: border-box;
 }
 body{
-  background-color: rgb(216, 215, 215);
+  background-color: rgb(194, 194, 194);
   #big-container{
     height: 100vh;
     padding: 20px;
