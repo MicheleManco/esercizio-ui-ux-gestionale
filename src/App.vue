@@ -71,7 +71,7 @@ export default {
                 quantitaRimanente:1000,
               },
               {
-                img:"assets/logo.png",
+                img:"assets/matita.png",
                 nome:"matita",
                 categoria:"cancelleria",
                 quantitaAcquistata:50,

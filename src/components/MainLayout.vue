@@ -87,8 +87,14 @@
     <!-- qui andranno i prodotti  -->
     <ul>
       <li class="product" v-for="prodotto,i in aziende[countervisible].ordine.prodotti" :key="i" >
-        <div class="anteprima-prodotto"><img :src="'../'+prodotto.img" alt=""></div>
-        {{prodotto.nome}}
+        <div class="anteprima-prodotto"><img :src="require(`../${prodotto.img}`)" alt=""></div>  
+        <div>
+          {{prodotto.nome}}: {{prodotto.skulLocation}}
+        </div>
+        <div>
+          Quantità aquistata: {{prodotto.quantitaAcquistata}}
+          Quantità rimanente: {{prodotto.quantitaRimanente}}
+        </div>
       </li>
     </ul>
   </div>
@@ -122,7 +128,6 @@ export default {
 <style scoped lang="scss">
 #container{
   width: 79%;
-  background-color: yellow;
   background-color: rgb(200, 228, 231);
   height: 100%;
   border-radius: 10px;
@@ -158,7 +163,6 @@ export default {
     background-color: white;
     overflow: scroll;
     overflow-x: hidden;
-
     .product{
       list-style: none;
       border-radius: 10px;
@@ -166,12 +170,16 @@ export default {
       margin: 15px 7px;
       background-color: rgb(245, 249, 250);
       box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
       .anteprima-prodotto{
-        height: 50px;
-        width: 50px;
+        height: 100px;
+        width: 100px;
         img{
-          height: 100px;
+          border-radius: 10px;
+          height: 100%;
           max-width: 100%;
+          box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
         }
       }
     }
