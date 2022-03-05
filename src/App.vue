@@ -62,7 +62,7 @@ export default {
 
               prodotti:[
                 {
-                img:"assets/logo.png",
+                img:"assets/penna.png",
                 nome:"penna",
                 categoria:"cancelleria",
                 quantitaAcquistata:100,
@@ -129,15 +129,26 @@ export default {
                     email:"Francaverdi@mail.com"
                   },
 
-              prodotti:{
+              prodotti:[
+                {
                 img:"assets/logo.png",
-                nome:"penna",
-                categoria:"cancelleria",
+                nome:"aspirapolvere",
+                categoria:"casa",
                 quantitaAcquistata:100,
-                skulLocation:"cnl-bic-bk-01",
+                skulLocation:"csa-dsy-wh-18",
                 prezzo:0.30,
                 quantitaRimanente:1000,
               },
+              {
+                img:"assets/logo.png",
+                nome:"lavatrice",
+                categoria:"casa",
+                quantitaAcquistata:50,
+                skulLocation:"csa-art-wh-30",
+                prezzo:0.30,
+                quantitaRimanente:800,
+              }
+              ],
 
               noteOrdine:{
                 operatore:"mario",
@@ -187,15 +198,17 @@ export default {
                     email:"giannirossi@mail.com"
                   },
 
-              prodotti:{
+              prodotti:[
+                {
                 img:"assets/logo.png",
-                nome:"penna",
-                categoria:"cancelleria",
+                nome:"felpa",
+                categoria:"abbigliamento",
                 quantitaAcquistata:100,
-                skulLocation:"cnl-bic-bk-01",
+                skulLocation:"abb-avr-ylw-11",
                 prezzo:0.30,
                 quantitaRimanente:1000,
               },
+              ],
 
               noteOrdine:{
                 operatore:"mario",
@@ -245,15 +258,26 @@ export default {
                     email:"giannirossi@mail.com"
                   },
 
-              prodotti:{
+              prodotti:[
+                {
                 img:"assets/logo.png",
-                nome:"astuccio",
+                nome:"penna",
                 categoria:"cancelleria",
                 quantitaAcquistata:100,
                 skulLocation:"cnl-bic-bk-01",
                 prezzo:0.30,
                 quantitaRimanente:1000,
               },
+              {
+                img:"assets/logo.png",
+                nome:"matita",
+                categoria:"cancelleria",
+                quantitaAcquistata:50,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:800,
+              }
+              ],
 
               noteOrdine:{
                 operatore:"mario",
@@ -303,7 +327,8 @@ export default {
                     email:"Francaverdi@mail.com"
                   },
 
-              prodotti:{
+              prodotti:[
+                {
                 img:"assets/logo.png",
                 nome:"penna",
                 categoria:"cancelleria",
@@ -312,6 +337,16 @@ export default {
                 prezzo:0.30,
                 quantitaRimanente:1000,
               },
+              {
+                img:"assets/logo.png",
+                nome:"matita",
+                categoria:"cancelleria",
+                quantitaAcquistata:50,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:800,
+              }
+              ],
 
               noteOrdine:{
                 operatore:"mario",
@@ -360,7 +395,8 @@ export default {
                     email:"Francaverdi@mail.com"
                   },
 
-              prodotti:{
+              prodotti:[
+                {
                 img:"assets/logo.png",
                 nome:"penna",
                 categoria:"cancelleria",
@@ -369,6 +405,16 @@ export default {
                 prezzo:0.30,
                 quantitaRimanente:1000,
               },
+              {
+                img:"assets/logo.png",
+                nome:"matita",
+                categoria:"cancelleria",
+                quantitaAcquistata:50,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:800,
+              }
+              ],
 
               noteOrdine:{
                 operatore:"mario",
@@ -417,7 +463,8 @@ export default {
                     email:"Francaverdi@mail.com"
                   },
 
-              prodotti:{
+              prodotti:[
+                {
                 img:"assets/logo.png",
                 nome:"penna",
                 categoria:"cancelleria",
@@ -426,6 +473,16 @@ export default {
                 prezzo:0.30,
                 quantitaRimanente:1000,
               },
+              {
+                img:"assets/logo.png",
+                nome:"matita",
+                categoria:"cancelleria",
+                quantitaAcquistata:50,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:800,
+              }
+              ],
 
               noteOrdine:{
                 operatore:"mario",
@@ -474,7 +531,8 @@ export default {
                     email:"Francaverdi@mail.com"
                   },
 
-              prodotti:{
+              prodotti:[
+                {
                 img:"assets/logo.png",
                 nome:"penna",
                 categoria:"cancelleria",
@@ -483,6 +541,16 @@ export default {
                 prezzo:0.30,
                 quantitaRimanente:1000,
               },
+              {
+                img:"assets/logo.png",
+                nome:"matita",
+                categoria:"cancelleria",
+                quantitaAcquistata:50,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:800,
+              }
+              ],
 
               noteOrdine:{
                 operatore:"mario",
@@ -531,7 +599,8 @@ export default {
                     email:"Francaverdi@mail.com"
                   },
 
-              prodotti:{
+              prodotti:[
+                {
                 img:"assets/logo.png",
                 nome:"penna",
                 categoria:"cancelleria",
@@ -540,6 +609,16 @@ export default {
                 prezzo:0.30,
                 quantitaRimanente:1000,
               },
+              {
+                img:"assets/logo.png",
+                nome:"matita",
+                categoria:"cancelleria",
+                quantitaAcquistata:50,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:800,
+              }
+              ],
 
               noteOrdine:{
                 operatore:"mario",
@@ -588,7 +667,8 @@ export default {
                     email:"Francaverdi@mail.com"
                   },
 
-              prodotti:{
+              prodotti:[
+                {
                 img:"assets/logo.png",
                 nome:"penna",
                 categoria:"cancelleria",
@@ -597,6 +677,16 @@ export default {
                 prezzo:0.30,
                 quantitaRimanente:1000,
               },
+              {
+                img:"assets/logo.png",
+                nome:"matita",
+                categoria:"cancelleria",
+                quantitaAcquistata:50,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:800,
+              }
+              ],
 
               noteOrdine:{
                 operatore:"mario",
@@ -645,7 +735,8 @@ export default {
                     email:"Francaverdi@mail.com"
                   },
 
-              prodotti:{
+              prodotti:[
+                {
                 img:"assets/logo.png",
                 nome:"penna",
                 categoria:"cancelleria",
@@ -654,6 +745,16 @@ export default {
                 prezzo:0.30,
                 quantitaRimanente:1000,
               },
+              {
+                img:"assets/logo.png",
+                nome:"matita",
+                categoria:"cancelleria",
+                quantitaAcquistata:50,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:800,
+              }
+              ],
 
               noteOrdine:{
                 operatore:"mario",
@@ -702,7 +803,8 @@ export default {
                     email:"Francaverdi@mail.com"
                   },
 
-              prodotti:{
+              prodotti:[
+                {
                 img:"assets/logo.png",
                 nome:"penna",
                 categoria:"cancelleria",
@@ -711,6 +813,16 @@ export default {
                 prezzo:0.30,
                 quantitaRimanente:1000,
               },
+              {
+                img:"assets/logo.png",
+                nome:"matita",
+                categoria:"cancelleria",
+                quantitaAcquistata:50,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:800,
+              }
+              ],
 
               noteOrdine:{
                 operatore:"mario",
@@ -759,7 +871,8 @@ export default {
                     email:"Francaverdi@mail.com"
                   },
 
-              prodotti:{
+              prodotti:[
+                {
                 img:"assets/logo.png",
                 nome:"penna",
                 categoria:"cancelleria",
@@ -768,6 +881,16 @@ export default {
                 prezzo:0.30,
                 quantitaRimanente:1000,
               },
+              {
+                img:"assets/logo.png",
+                nome:"matita",
+                categoria:"cancelleria",
+                quantitaAcquistata:50,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:800,
+              }
+              ],
 
               noteOrdine:{
                 operatore:"mario",

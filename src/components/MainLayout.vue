@@ -85,6 +85,12 @@
   <!-- riquadro prodotti  -->
   <div id="background-white">
     <!-- qui andranno i prodotti  -->
+    <ul>
+      <li class="product" v-for="prodotto,i in aziende[countervisible].ordine.prodotti" :key="i" >
+        <div class="anteprima-prodotto"><img :src="'../'+prodotto.img" alt=""></div>
+        {{prodotto.nome}}
+      </li>
+    </ul>
   </div>
 
   <!----------------------------------------------------------------------------------------------------------------------------------------------->
@@ -144,12 +150,31 @@ export default {
     }
   }
   #background-white{
-    height: 600px;
     max-height: 67%;
     margin: 0 20px;
+    padding: 15px;
     border-radius: 20px;
     box-shadow: 4px 8px 11px 6px rgba(0,0,0,0.14) , 4px 5px 14px 4px rgba(0,0,0,0.12) , 4px 6px 8px 3px rgba(0,0,0,0.2);
     background-color: white;
+    overflow: scroll;
+    overflow-x: hidden;
+
+    .product{
+      list-style: none;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 15px 7px;
+      background-color: rgb(245, 249, 250);
+      box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
+      .anteprima-prodotto{
+        height: 50px;
+        width: 50px;
+        img{
+          height: 100px;
+          max-width: 100%;
+        }
+      }
+    }
   }
   #btn-finali{
     display: flex;
