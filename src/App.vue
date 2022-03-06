@@ -962,7 +962,7 @@ export default {
   box-sizing: border-box;
 }
 body{
-  background-color: rgb(194, 194, 194);
+  background-color: rgb(245, 243, 243);
   #big-container{
     height: 100vh;
     padding: 20px;

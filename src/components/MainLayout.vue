@@ -123,9 +123,9 @@
   <!----------------------------------------------------------------------------------------------------------------------------------------------->
   <!-- parte bassa con tasto chiusura ordine  -->
   <div id="btn-finali">
-    <button class="btn btn-primary">scegli scatola</button>
+    <button class="btn btn-scatola"><strong>Scegli Scatola</strong></button>
     <!-- background-color and border-color pulsante scatola #e7ac27 -->
-    <button class="btn btn-success">chiusura ordine</button>
+    <button class="btn btn-success"><strong>Chiusura Ordine</strong></button>
   </div>
 </div>
 
@@ -150,7 +150,7 @@ export default {
 <style scoped lang="scss">
 #container{
   width: 79%;
-  background-color: rgb(200, 228, 231);
+  background-color: rgb(191, 193, 202);
   height: 100%;
   border-radius: 10px;
   padding:8px;
@@ -191,7 +191,7 @@ export default {
       border-radius: 10px;
       padding: 10px;
       margin: 15px 7px;
-      background-color: rgb(245, 249, 250);
+      background-color: #e1f1f5;
       box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
       display: flex;
       align-items: center;
@@ -242,6 +242,10 @@ export default {
     display: flex;
     justify-content: space-around;
     margin: 40px 0;
+    .btn-scatola{
+        background-color: #c29415;
+        color: white;
+      }
     .btn{
       height: 70px;
       width: 200px;
