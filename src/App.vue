@@ -63,7 +63,7 @@ export default {
               prodotti:[
                 {
                 img:"assets/penna.png",
-                nome:"penna",
+                nome:"Penna",
                 categoria:"cancelleria",
                 quantitaAcquistata:100,
                 skulLocation:"cnl-bic-bk-01",
@@ -71,11 +71,49 @@ export default {
                 quantitaRimanente:1000,
               },
               {
+                img:"assets/penna.png",
+                nome:"Penna",
+                categoria:"cancelleria",
+                quantitaAcquistata:100,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:1000,
+              },
+              {
+                img:"assets/penna.png",
+                nome:"Penna",
+                categoria:"cancelleria",
+                quantitaAcquistata:100,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:1000,
+              },
+              {
+                img:"assets/penna.png",
+                nome:"Penna",
+                categoria:"cancelleria",
+                quantitaAcquistata:100,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:1000,
+              },
+              {
+                img:"assets/penna.png",
+                nome:"Penna",
+                categoria:"cancelleria",
+                quantitaAcquistata:100,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:1000,
+              },
+              
+
+              {
                 img:"assets/matita.png",
-                nome:"matita",
+                nome:"Matita",
                 categoria:"cancelleria",
                 quantitaAcquistata:50,
-                skulLocation:"cnl-bic-bk-01",
+                skulLocation:"cnl-mat-rd-12",
                 prezzo:0.30,
                 quantitaRimanente:800,
               }

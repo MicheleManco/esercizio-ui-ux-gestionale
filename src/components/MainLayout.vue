@@ -34,14 +34,30 @@
       <li class="dropdown-item">Sesso: {{aziende[countervisible].ordine.cliente.sesso}}</li>
     </ul>
 
+    <!-- stato ordine ------------------------------------------------------------------------------------------------------------>
     <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
       STATO ORDINE
     </button>
     <ul class="dropdown-menu">
       <li class="dropdown-item">
-        <span>spedito</span> <span>in consegna</span> <span>arrivato</span>
+
+        <div class="avanzamento">
+          <div class="step">
+            <div><h6>spedito</h6></div>
+            <div class="dot"><i class="bi bi-building"></i></div>
+          </div> 
+          <div class="step in-consegna">
+            <div><h6>in consegna</h6></div>
+            <div class="dot"><i class="bi bi-arrow-counterclockwise"></i></div>
+          </div> 
+          <div class="step">
+            <div><h6>consegnato</h6></div>
+            <div class="dot"><i class="bi bi-house-door"></i></div>
+          </div>
+        </div>
+
         <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 33%"></div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100" style="width: 14%"></div>
         </div>
       </li>
       <li class="dropdown-item">
@@ -88,13 +104,18 @@
     <ul>
       <li class="product" v-for="prodotto,i in aziende[countervisible].ordine.prodotti" :key="i" >
         <div class="anteprima-prodotto"><img :src="require(`../${prodotto.img}`)" alt=""></div>  
-        <div>
-          {{prodotto.nome}}: {{prodotto.skulLocation}}
+        
+        <div class="spaziatore">
+          <div class="title-prod">
+            <div><h4>{{prodotto.nome}}: {{prodotto.skulLocation}}</h4></div> 
+            <div>Prezzo unitario: {{prodotto.prezzo}}€ </div>
+          </div>
+          <div class="info-prod">
+            <div>Q. Aquistata: {{prodotto.quantitaAcquistata}}pz</div> 
+            <div>Q. Rimanente: {{prodotto.quantitaRimanente}}pz</div> 
+          </div>
         </div>
-        <div>
-          Quantità aquistata: {{prodotto.quantitaAcquistata}}
-          Quantità rimanente: {{prodotto.quantitaRimanente}}
-        </div>
+
       </li>
     </ul>
   </div>
@@ -103,6 +124,7 @@
   <!-- parte bassa con tasto chiusura ordine  -->
   <div id="btn-finali">
     <button class="btn btn-primary">scegli scatola</button>
+    <!-- background-color and border-color pulsante scatola #e7ac27 -->
     <button class="btn btn-success">chiusura ordine</button>
   </div>
 </div>
@@ -140,7 +162,8 @@ export default {
     justify-content: space-around;
     flex-wrap: wrap;
     .card-body{
-      width: 300px;
+      max-width: 450px;
+      max-height: 100%;
       margin: 10px 10px;
       box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
       .note{
@@ -172,6 +195,20 @@ export default {
       box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
       display: flex;
       align-items: center;
+      .spaziatore{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 22px;
+        .title-prod{
+          margin:0 30px;
+        }
+        .info-prod{
+          margin-right: 80px;
+        }
+      }
+      
       .anteprima-prodotto{
         height: 100px;
         width: 100px;
@@ -181,6 +218,23 @@ export default {
           max-width: 100%;
           box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
         }
+      }
+    }
+  }
+  .avanzamento{
+    display: flex;
+    justify-content: space-between;
+    .in-consegna{
+      padding-left: 10px;
+    }
+    .step{
+      margin:0 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .dot{
+        font-size: 20px;
+        margin:5px 0 10px;
       }
     }
   }

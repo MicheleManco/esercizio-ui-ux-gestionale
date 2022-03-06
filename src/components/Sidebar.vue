@@ -49,7 +49,9 @@ export default {
         border-radius: 10px;
         padding:8px;
         box-shadow: 0px 8px 17px 2px rgba(0,0,0,0.14) , 0px 3px 14px 2px rgba(0,0,0,0.12) , 0px 5px 5px -3px rgba(0,0,0,0.2);
-        
+        h2{
+            margin-left: 10px;
+        }
 
         ul{
             width: 100%;
