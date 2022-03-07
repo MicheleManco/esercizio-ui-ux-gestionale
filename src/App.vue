@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="big-container">
-      <Sidebar :aziende = "aziende" @select="selettore"/>
+      <Sidebar :aziende = "aziende" @select-active="selettore" @select="selectStato"/>
       <MainLayout :aziende = "aziende" :countervisible="countervisible"/>
     </div>
     
@@ -35,10 +35,10 @@ export default {
               corriere:"ups",
               idOrdine:"78913467",
               pagamento:"carta di credito",
-              statoOrdine:"da spedire",
+              statoOrdine: 0,
               totSconto: 10,
-              totProdotti:500,
-              totSpedizione:80,
+              totProdotti: 500,
+              totSpedizione: 80,
               totIncasso: 410,
               chiusura:"false",
             
@@ -169,7 +169,7 @@ export default {
 
               prodotti:[
                 {
-                img:"assets/logo.png",
+                img:"assets/aspirapolvere.jpg",
                 nome:"aspirapolvere",
                 categoria:"casa",
                 quantitaAcquistata:100,
@@ -178,7 +178,7 @@ export default {
                 quantitaRimanente:1000,
               },
               {
-                img:"assets/logo.png",
+                img:"assets/lavatrice.jpg",
                 nome:"lavatrice",
                 categoria:"casa",
                 quantitaAcquistata:50,
@@ -948,8 +948,11 @@ export default {
   methods:{
     selettore(count){
       this.countervisible = count
-      console.log(this.countervisible);
+      this.selectStato()
     },
+      selectStato(i,res){
+          this.aziende[i].ordine.statoOrdine = res.target.value
+    }
   }
 }
 

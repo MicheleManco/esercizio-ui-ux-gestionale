@@ -3,7 +3,7 @@
   
   <div class="btn-group">
     <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-      INDIRIZZO
+      <strong>INDIRIZZO </strong>
     </button>
     <ul class="dropdown-menu">
       <li class="dropdown-item"> Destinatario: {{aziende[countervisible].ordine.indirizzo.nome}} , {{aziende[countervisible].ordine.indirizzo.cognome}}</li>
@@ -13,7 +13,7 @@
     </ul>
 
     <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-      ORDINE
+      <strong>ORDINE </strong>
     </button>
     <ul class="dropdown-menu">
       <li class="dropdown-item">{{aziende[countervisible].ordine.ecommerceProvenienza}} , {{aziende[countervisible].ordine.data}}</li>
@@ -26,17 +26,17 @@
     </ul>
 
     <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-      CLIENTE
+      <strong>CLIENTE </strong>
     </button>
     <ul class="dropdown-menu">
-      <li class="dropdown-item">{{aziende[countervisible].ordine.cliente.nome}} , {{aziende[countervisible].ordine.cliente.cognome}} Sesso:{{aziende[countervisible].ordine.cliente.sesso}}  </li>
+      <li class="dropdown-item">{{aziende[countervisible].ordine.cliente.nome}} , {{aziende[countervisible].ordine.cliente.cognome}}</li>
       <li class="dropdown-item">{{aziende[countervisible].ordine.cliente.email}} </li>
       <li class="dropdown-item">Sesso: {{aziende[countervisible].ordine.cliente.sesso}}</li>
     </ul>
 
     <!-- stato ordine ------------------------------------------------------------------------------------------------------------>
     <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-      STATO ORDINE
+      <strong>STATO ORDINE </strong>
     </button>
     <ul class="dropdown-menu">
       <li class="dropdown-item">
@@ -57,7 +57,7 @@
         </div>
 
         <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100" style="width: 14%"></div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" :aria-valuenow="aziende[countervisible].ordine.statoOrdine" aria-valuemin="0" aria-valuemax="100" :style="`width:${aziende[countervisible].ordine.statoOrdine}%`"></div>
         </div>
       </li>
       <li class="dropdown-item">
@@ -73,7 +73,7 @@
 
   <!-- btn note -------------------------------------------------------------------------------------->
     <p>      
-      <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapse1 multiCollapse2">NOTE </button>
+      <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapse1 multiCollapse2"><strong>NOTE</strong> </button>
     </p>
     <div class="row riga-note">
       <div class="col-6">
@@ -141,7 +141,7 @@ export default {
   props:{
       aziende:Array,//questo è tutto l'array di dati che ho
       countervisible:Number//questa è una variabile numerica che cambia il suo valore in base al click
-  }
+  },
 }
 </script>
 
@@ -165,13 +165,13 @@ export default {
     }
     .card-body{
       max-width: 450px;
-      // max-height: 100%;
       margin: 10px 10px;
       box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
     }
     .btn{
       margin: 20px;
-      border-radius: 10px;
+      padding: 0px 20px;
+      border-radius: 40px;
       height: 70px;
       box-shadow: -2px -4px 0px 0px #0006 inset, 2px 2px 0px 0px #FFF7 inset;
     }
@@ -179,7 +179,7 @@ export default {
   #background-white{
     max-height: 67%;
     margin: 0 20px;
-    padding: 15px;
+    padding: 0 20px;
     border-radius: 20px;
     box-shadow: 4px 8px 11px 6px rgba(0,0,0,0.14) , 4px 5px 14px 4px rgba(0,0,0,0.12) , 4px 6px 8px 3px rgba(0,0,0,0.2);
     background-color: white;
@@ -189,7 +189,7 @@ export default {
       list-style: none;
       border-radius: 10px;
       padding: 10px;
-      margin: 15px 7px;
+      margin: 20px 0px;
       background-color: #e6e6e6;
       box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
       display: flex;
@@ -209,12 +209,12 @@ export default {
       }
       
       .anteprima-prodotto{
-        height: 100px;
         width: 100px;
         img{
           border-radius: 10px;
-          height: 100%;
           max-width: 100%;
+          max-height: 100%;
+          
           box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
         }
       }
