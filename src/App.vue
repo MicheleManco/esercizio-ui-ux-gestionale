@@ -937,7 +937,7 @@ export default {
 
               noteCliente:{
                 cliente:"fantasia",
-                text:"sdognbsigujdnghosignhosgnosg nsoldikgjnowesringsoikjfgsiokedigukhnasogikjusnedog idkjgnfvmaoikgfjnosuijknhgisegujnhsoeguij jhnsoigernhsiogkshjoregujishnogiujs hnogishngirujdngsiogsneodigf jsoiguseordgishngioshn"
+                text:"sdognbsigujdnghosignhosgnosg nsoldikgjnowesringsoikjfgsiokedigukhnasogikjusnedog idkjgnfvmaoikgfjnosuijknhgisegujnhsoeguij jhnsoigernhsiogkshjoregujishnogiujs hnogishngirujdngsiogsneodigf jsoiguseordgishngioshn sdognbsigujdnghosignhosgnosg nsoldikgjnowesringsoikjfgsiokedigukhnasogikjusnedog idkjgnfvmaoikgfjnosuijknhgisegujnhsoeguij jhnsoigernhsiogkshjoregujishnogiujs hnogishngirujdngsiogsneodigf jsoiguseordgishngioshn"
               },
               }
           
@@ -962,7 +962,7 @@ export default {
   box-sizing: border-box;
 }
 body{
-  background-color: rgb(245, 243, 243);
+  background-color: #ffffff;
   #big-container{
     height: 100vh;
     padding: 20px;

@@ -75,9 +75,8 @@
     <p>      
       <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapse1 multiCollapse2">NOTE </button>
     </p>
-    <div class="row">
-      <div class="col-10"></div>
-      <div class="col-5">
+    <div class="row riga-note">
+      <div class="col-6">
         <div class="collapse multi-collapse" id="multiCollapse1">
           <div class="card card-body">
             <h5>Operatore:</h5><div class="note">{{aziende[countervisible].ordine.noteOrdine.operatore}} </div><br>
@@ -86,11 +85,11 @@
         </div>
       </div>
       
-      <div class="col-5">
+      <div class="col-6">
         <div class="collapse multi-collapse" id="multiCollapse2">
           <div class="card card-body">
-            <h5>Cliente:</h5>  <div class="note">{{aziende[countervisible].ordine.noteCliente.cliente}}</div> <br>
-            <h5>Nota:</h5> <div class="note">{{aziende[countervisible].ordine.noteCliente.text}}</div> 
+            <h5>Cliente:</h5>  <div >{{aziende[countervisible].ordine.noteCliente.cliente}}</div> <br>
+            <h5>Nota:</h5> <div >{{aziende[countervisible].ordine.noteCliente.text}}</div> 
           </div>
         </div>
       </div>
@@ -150,7 +149,7 @@ export default {
 <style scoped lang="scss">
 #container{
   width: 79%;
-  background-color: rgb(191, 193, 202);
+  background-color: #cacaca;
   height: 100%;
   border-radius: 10px;
   padding:8px;
@@ -161,14 +160,14 @@ export default {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    .riga-note{
+      min-width: 800px;
+    }
     .card-body{
       max-width: 450px;
-      max-height: 100%;
+      // max-height: 100%;
       margin: 10px 10px;
       box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
-      .note{
-        max-width: 100%;
-      }
     }
     .btn{
       margin: 20px;
@@ -191,7 +190,7 @@ export default {
       border-radius: 10px;
       padding: 10px;
       margin: 15px 7px;
-      background-color: #e1f1f5;
+      background-color: #e6e6e6;
       box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
       display: flex;
       align-items: center;

@@ -43,7 +43,7 @@ export default {
     width: 20%;
 }
     #container-sidebar{
-        background-color: rgb(191, 193, 202);
+        background-color: #cacaca;
         width: 100%;
         height: 100%;
         border-radius: 10px;
@@ -66,7 +66,7 @@ export default {
                 border-radius: 10px;
                 padding: 10px;
                 margin: 12px 7px;
-                background-color: #e1f1f5;
+                background-color: #ffffff;
                 box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
                 
                 .title-side{
