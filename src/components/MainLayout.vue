@@ -2,6 +2,7 @@
 <div id="container">
   
   <div class="btn-group">
+    <!-- bottone indirizzo  -->
     <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
       <strong>INDIRIZZO </strong>
     </button>
@@ -10,7 +11,7 @@
       <li class="dropdown-item">Indirizzo: {{aziende[countervisible].ordine.indirizzo.indirizzo1}} , {{aziende[countervisible].ordine.indirizzo.cap}} {{aziende[countervisible].ordine.indirizzo.citta}}</li>
       <li class="dropdown-item">{{aziende[countervisible].ordine.indirizzo.nazione}},{{aziende[countervisible].ordine.indirizzo.telefono}}</li>
     </ul>
-
+    <!-- bottone ordine  -->
     <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
       <strong>ORDINE </strong>
     </button>
@@ -23,7 +24,7 @@
       <li class="dropdown-item">Totale spedizione: {{aziende[countervisible].ordine.totSpedizione}}€</li>
       <li class="dropdown-item">Totale incasso: {{aziende[countervisible].ordine.totIncasso}}€</li>
     </ul>
-
+    <!-- bottone cliente  -->
     <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
       <strong>CLIENTE </strong>
     </button>

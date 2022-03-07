@@ -70,8 +70,6 @@ export default {
                 prezzo:0.30,
                 quantitaRimanente:1000,
               },
-              
-
               {
                 img:"assets/matita.png",
                 nome:"Matita",
@@ -262,8 +260,8 @@ export default {
 
               prodotti:[
                 {
-                img:"assets/logo.png",
-                nome:"penna",
+                img:"assets/penna.png",
+                nome:"Penna",
                 categoria:"cancelleria",
                 quantitaAcquistata:100,
                 skulLocation:"cnl-bic-bk-01",
@@ -271,11 +269,47 @@ export default {
                 quantitaRimanente:1000,
               },
               {
-                img:"assets/logo.png",
-                nome:"matita",
+                img:"assets/matita.png",
+                nome:"Matita",
                 categoria:"cancelleria",
                 quantitaAcquistata:50,
+                skulLocation:"cnl-mat-rd-12",
+                prezzo:0.30,
+                quantitaRimanente:800,
+              },
+               {
+                img:"assets/penna.png",
+                nome:"Penna",
+                categoria:"cancelleria",
+                quantitaAcquistata:100,
                 skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:1000,
+              },
+              {
+                img:"assets/matita.png",
+                nome:"Matita",
+                categoria:"cancelleria",
+                quantitaAcquistata:50,
+                skulLocation:"cnl-mat-rd-12",
+                prezzo:0.30,
+                quantitaRimanente:800,
+              },
+               {
+                img:"assets/penna.png",
+                nome:"Penna",
+                categoria:"cancelleria",
+                quantitaAcquistata:100,
+                skulLocation:"cnl-bic-bk-01",
+                prezzo:0.30,
+                quantitaRimanente:1000,
+              },
+              {
+                img:"assets/matita.png",
+                nome:"Matita",
+                categoria:"cancelleria",
+                quantitaAcquistata:50,
+                skulLocation:"cnl-mat-rd-12",
                 prezzo:0.30,
                 quantitaRimanente:800,
               }
@@ -852,7 +886,7 @@ export default {
               totSconto:10,
               totProdotti:500,
               totSpedizione:80,
-              totIncasso:400,
+              totIncasso:0,
               chiusura:"false",
             
               indirizzo: {
