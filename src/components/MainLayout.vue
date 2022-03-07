@@ -71,7 +71,7 @@
       </li>
     </ul>
 
-  <!-- btn note -------------------------------------------------------------------------------------->
+    <!-- btn note -------------------------------------------------------------------------------------->
     <p>      
       <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapse1 multiCollapse2"><strong>NOTE</strong> </button>
     </p>
@@ -150,8 +150,8 @@ export default {
 #container{
   width: 76%;
   background-color: #cacaca;
-  height: 100%;
-  border-radius: 10px;
+  max-height: 95vh;
+  border-radius: 15px;
   padding:8px;
   box-shadow: 0px 8px 17px 2px rgba(0,0,0,0.14) , 0px 3px 14px 2px rgba(0,0,0,0.12) , 0px 5px 5px -3px rgba(0,0,0,0.2);
   overflow: scroll;

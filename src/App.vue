@@ -965,7 +965,6 @@ export default {
 body{
   background-color: #ffffff;
   #big-container{
-    height: 100vh;
     padding: 20px;
     display: flex;
     justify-content: space-between;
