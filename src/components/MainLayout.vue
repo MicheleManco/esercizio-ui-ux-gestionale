@@ -9,7 +9,6 @@
       <li class="dropdown-item"> Destinatario: {{aziende[countervisible].ordine.indirizzo.nome}} , {{aziende[countervisible].ordine.indirizzo.cognome}}</li>
       <li class="dropdown-item">Indirizzo: {{aziende[countervisible].ordine.indirizzo.indirizzo1}} , {{aziende[countervisible].ordine.indirizzo.cap}} {{aziende[countervisible].ordine.indirizzo.citta}}</li>
       <li class="dropdown-item">{{aziende[countervisible].ordine.indirizzo.nazione}},{{aziende[countervisible].ordine.indirizzo.telefono}}</li>
-      <li class="dropdown-item">Separated link</li>
     </ul>
 
     <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -148,7 +147,7 @@ export default {
 
 <style scoped lang="scss">
 #container{
-  width: 79%;
+  width: 76%;
   background-color: #cacaca;
   height: 100%;
   border-radius: 10px;
@@ -173,6 +172,7 @@ export default {
       padding: 0px 20px;
       border-radius: 40px;
       height: 70px;
+      background-color: #e6e6e6;
       box-shadow: -2px -4px 0px 0px #0006 inset, 2px 2px 0px 0px #FFF7 inset;
     }
   }
@@ -242,7 +242,7 @@ export default {
     justify-content: space-around;
     margin: 40px 0;
     .btn-scatola{
-        background-color: #c29415;
+        background-color: #ffa500;
         color: white;
       }
     .btn{

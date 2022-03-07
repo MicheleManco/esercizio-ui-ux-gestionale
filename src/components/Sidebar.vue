@@ -10,10 +10,9 @@
                 <div class="n-ordine">n.ordine: <strong>{{azienda.ordine.idOrdine}}</strong> </div>
             </div>
             <select name="stato-ordine" @change="$emit('select',i,$event)" id="selezione">
-                <option :value="0">stato</option>
                 <option :value="0">da Spedire</option>
-                <option :value="15">spedito</option>
-                <option :value="50">transito</option>
+                <option :value="14">spedito</option>
+                <option :value="47">transito</option>
                 <option :value="100">consegnato</option>
             </select>
         </li>
@@ -47,7 +46,7 @@ export default {
 
 <style scoped lang="scss">
 #container{
-    width: 20%;
+    width: 22%;
 }
     #container-sidebar{
         background-color: #cacaca;
