@@ -1,30 +1,31 @@
 <template>
 <div id="container">
     <h2>lista ordini</h2>
+
+    <!-- barra di ricerca  -->
     <div id="search">
             <input type="text" placeholder="n.ordine" v-model="ricerca">
             <i class="bi bi-search"></i>
         </div>
       <div id="container-sidebar">
         
-        <!-- barra di ricerca  -->
-        
         <ul>
-            <!-- v-if="azienda.ordine.idOrdine.includes(ricerca)"  -->
             <li v-for="azienda,i in  aziende" :key="i" :class="i === countervisible ? 'active':''" @click="showall(i),$emit('select-active', countervisible)">
                 <div v-if="azienda.ordine.idOrdine.includes(ricerca)" class="contenitore-li">
+
                     <div>
                         <div class="title-side">{{azienda.ecommerceProvenienza}}</div>
                         <div class="n-ordine">n.ordine: <strong>{{azienda.ordine.idOrdine}}</strong> </div>
                     </div>
+
                     <select name="stato-ordine" @change="$emit('select',i,$event)" id="selezione">
                         <option :value="0">da Spedire</option>
                         <option :value="14">spedito</option>
                         <option :value="47">transito</option>
                         <option :value="100">consegnato</option>
                     </select>
+                    
                 </div>
-            
             </li>
         </ul>
 
@@ -49,7 +50,6 @@ export default {
       //mi serve per dare a i li la classe item se clicco su di essi
       showall(index){
           this.countervisible = index
-          console.log(this.ricerca);
       }
   }
 }

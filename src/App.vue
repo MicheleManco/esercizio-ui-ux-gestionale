@@ -12,8 +12,6 @@
 import Sidebar from './components/Sidebar.vue'
 import MainLayout from './components/MainLayout.vue'
 
-
-
 export default {
   name: 'App',
   components: {

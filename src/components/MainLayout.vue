@@ -3,18 +3,15 @@
   
   <div class="btn-group">
     <!-- bottone indirizzo  -->
-    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-      <strong>INDIRIZZO </strong>
-    </button>
+    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><strong>INDIRIZZO </strong></button>
     <ul class="dropdown-menu">
       <li class="dropdown-item"> Destinatario: {{aziende[countervisible].ordine.indirizzo.nome}} , {{aziende[countervisible].ordine.indirizzo.cognome}}</li>
       <li class="dropdown-item">Indirizzo: {{aziende[countervisible].ordine.indirizzo.indirizzo1}} , {{aziende[countervisible].ordine.indirizzo.cap}} {{aziende[countervisible].ordine.indirizzo.citta}}</li>
       <li class="dropdown-item">{{aziende[countervisible].ordine.indirizzo.nazione}},{{aziende[countervisible].ordine.indirizzo.telefono}}</li>
     </ul>
+
     <!-- bottone ordine  -->
-    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-      <strong>ORDINE </strong>
-    </button>
+    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><strong>ORDINE </strong></button>
     <ul class="dropdown-menu">
       <li class="dropdown-item">{{aziende[countervisible].ordine.ecommerceProvenienza}} , {{aziende[countervisible].ordine.data}}</li>
       <li class="dropdown-item">{{aziende[countervisible].ordine.corriere}} , {{aziende[countervisible].ordine.idOrdine}}</li>
@@ -24,10 +21,9 @@
       <li class="dropdown-item">Totale spedizione: {{aziende[countervisible].ordine.totSpedizione}}€</li>
       <li class="dropdown-item">Totale incasso: {{aziende[countervisible].ordine.totIncasso}}€</li>
     </ul>
+
     <!-- bottone cliente  -->
-    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-      <strong>CLIENTE </strong>
-    </button>
+    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><strong>CLIENTE </strong></button>
     <ul class="dropdown-menu">
       <li class="dropdown-item">{{aziende[countervisible].ordine.cliente.nome}} , {{aziende[countervisible].ordine.cliente.cognome}}</li>
       <li class="dropdown-item">{{aziende[countervisible].ordine.cliente.email}} </li>
@@ -35,9 +31,7 @@
     </ul>
 
     <!-- stato ordine ------------------------------------------------------------------------------------------------------------>
-    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-      <strong>STATO ORDINE </strong>
-    </button>
+    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><strong>STATO ORDINE </strong></button>
     <ul class="dropdown-menu">
       <li class="dropdown-item">
 
@@ -55,11 +49,12 @@
             <div class="dot"><i class="bi bi-house-door"></i></div>
           </div>
         </div>
-
+        <!-- barra di stato  -->
         <div class="progress">
           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" :aria-valuenow="aziende[countervisible].ordine.statoOrdine" aria-valuemin="0" aria-valuemax="100" :style="`width:${aziende[countervisible].ordine.statoOrdine}%`"></div>
         </div>
       </li>
+
       <li class="dropdown-item">
         Spedito da:
       </li>
@@ -97,6 +92,7 @@
   </div>
 
   <!----------------------------------------------------------------------------------------------------------------------------------------------->
+
   <!-- riquadro prodotti  -->
   <div id="background-white">
     <!-- qui andranno i prodotti  -->
@@ -120,12 +116,13 @@
   </div>
 
   <!----------------------------------------------------------------------------------------------------------------------------------------------->
+
   <!-- parte bassa con tasto chiusura ordine  -->
   <div id="btn-finali">
     <button class="btn btn-scatola"><strong>Scegli Scatola</strong></button>
-    <!-- background-color and border-color pulsante scatola #e7ac27 -->
     <button class="btn btn-success"><strong>Chiusura Ordine</strong></button>
   </div>
+  
 </div>
 
 </template>
@@ -189,7 +186,6 @@ scrollbar-width: none;  /* Firefox */
   #background-white::-webkit-scrollbar {
       display: none;
   }
-
   /* Hide scrollbar for IE, Edge and Firefox */
   #background-white {
   -ms-overflow-style: none;  /* IE and Edge */
