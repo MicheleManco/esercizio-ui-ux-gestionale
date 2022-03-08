@@ -147,6 +147,15 @@ export default {
 
 
 <style scoped lang="scss">
+/* Hide scrollbar for Chrome, Safari and Opera */
+#container::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+#container {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
 #container{
   width: 76%;
   background-color: #cacaca;
@@ -155,7 +164,6 @@ export default {
   padding:8px;
   box-shadow: 0px 8px 17px 2px rgba(0,0,0,0.14) , 0px 3px 14px 2px rgba(0,0,0,0.12) , 0px 5px 5px -3px rgba(0,0,0,0.2);
   overflow: scroll;
-  overflow-x: hidden;
   .btn-group{
     display: flex;
     justify-content: space-around;
@@ -177,6 +185,16 @@ export default {
       box-shadow: -2px -4px 0px 0px #0006 inset, 2px 2px 0px 0px #FFF7 inset;
     }
   }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  #background-white::-webkit-scrollbar {
+      display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  #background-white {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  }
   #background-white{
     max-height: 67%;
     margin: 0 20px;
@@ -185,7 +203,6 @@ export default {
     box-shadow: 4px 8px 11px 6px rgba(0,0,0,0.14) , 4px 5px 14px 4px rgba(0,0,0,0.12) , 4px 6px 8px 3px rgba(0,0,0,0.2);
     background-color: white;
     overflow: scroll;
-    overflow-x: hidden;
     .product{
       list-style: none;
       border-radius: 10px;

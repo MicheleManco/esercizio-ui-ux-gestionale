@@ -1,4 +1,5 @@
 # prova-ui-gestionale
+creazione di un app touch per un azienda di logistica
 
 ## Project setup
 ```

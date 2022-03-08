@@ -83,6 +83,15 @@ h2{
         border-radius: 20px;
     }
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+#container-sidebar::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+#container-sidebar {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
 #container-sidebar{
     background-color: #cacaca;
     width: 100%;
@@ -90,7 +99,6 @@ h2{
     border-radius: 15px;
     padding:10px;
     overflow: scroll;
-    overflow-x: hidden;
     box-shadow: 0px 8px 17px 2px rgba(0,0,0,0.14) , 0px 3px 14px 2px rgba(0,0,0,0.12) , 0px 5px 5px -3px rgba(0,0,0,0.2);
     ul{
         .active{
